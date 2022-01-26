@@ -16,7 +16,7 @@ ListeVar = [
     'AMT_ANNUITY',
     'AMT_INCOME_TOTAL']
 
-fic_donnee = 'donnee\donnee_train_pretraitrement_1000.csv'
+fic_donnee = 'donnee/donnee_train_pretraitrement_1000.csv'
 
 @st.cache
 def get_my_data():
