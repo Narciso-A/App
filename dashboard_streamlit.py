@@ -71,13 +71,22 @@ st.markdown("\n\n\n\n")
 id_client = df['post_id'].to_list()[0]
 st.write("**Identifiant client**",id_client)
 
-val_defaut = round(100*df['valeurs'].to_list()[0][0],2)
-val_nondefaut = round(100*df['valeurs'].to_list()[0][1],2)
+val_nondefaut = round(100*df['valeurs'].to_list()[0][0],2)
+val_defaut = round(100*df['valeurs'].to_list()[0][1],2)
 
 st.write( 
-    "**Valeurs:** ", 
-    "**non defaut**", val_defaut," %, ",
-    "**defaut**", val_nondefaut," %" )
+    "**Risque estimé: ** ",
+     val_defaut," %" )
+
+# recommandation
+seuil1 = 45 # seuil de non defaut en pourcentage
+seuil2 = 70
+if val_nondefaut<seuil1:
+    st.write("Recommandation : ","**dossier validé**",)
+elif (val_nondefaut>=seuil1) & (val_nondefaut<seuil2):
+    st.write("Recommandation : ","**dossier à reexaminer**")
+else:
+    st.write("Recommandation : ","**dossier refusé**")
 
 
 # Graphique subplot de la liste des variables choisis
