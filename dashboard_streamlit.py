@@ -82,9 +82,9 @@ st.write(
 seuil1 = 45 # seuil de non defaut en pourcentage
 seuil2 = 80
 if val_nondefaut<seuil1:
-    st.error("- **Recommandation : dossier refusé**")
+    st.error("**Recommandation : dossier refusé**")
 elif (val_nondefaut>=seuil1) & (val_nondefaut<seuil2):
-    st.warning("- **Recommandation : dossier à réexaminer**")
+    st.warning("**Recommandation : dossier à examiner**")
 else:
     st.success("**Recommandation : dossier validé**")
 
