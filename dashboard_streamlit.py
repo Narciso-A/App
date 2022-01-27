@@ -28,9 +28,10 @@ def get_my_data():
 try:
     
     df_mydata = get_my_data()
+    
+    st.info('Veuillez sélectionner un identifiant client dans le menu déroulant')
     st.sidebar.write("# Choix d´un identifiant client")
 
-    ## Risque credit
     client_id = st.sidebar.selectbox( 
         "", list(df_mydata.index),index=1
     )
