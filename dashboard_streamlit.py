@@ -29,10 +29,11 @@ try:
     
     df_mydata = get_my_data()
 
+    st.sidebar.write("# Choix d´un identifiant client")
+
     st.sidebar.info('**Veuillez sélectionner un identifiant \
     client dans le menu déroulant.**')
 
-    st.sidebar.write("# Choix d´un identifiant client")
 
     client_id = st.sidebar.selectbox( 
         "", list(df_mydata.index),index=1
