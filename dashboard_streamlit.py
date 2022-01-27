@@ -132,9 +132,10 @@ tab = df_mydata.loc[client_id,ListeVar]
 tab = tab.reset_index()
 tab.index = ListeDef
 tab.columns = ['Nom abrégé de l´indicateur','Client Id: '+str(client_id)]
-for idx in range(2):
-    tab.iloc[idx,1] = round(float(tab.iloc[idx,1]),2)
-for idx in range(3,8):
-    tab.iloc[idx,1] = int(tab.iloc[idx,1])
+
+# for idx in range(2):
+#     tab.iloc[idx,1] = round(float(tab.iloc[idx,1]),2)
+# for idx in range(3,8):
+#     tab.iloc[idx,1] = int(tab.iloc[idx,1])
 
 st.write(tab)
