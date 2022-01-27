@@ -7,4 +7,4 @@ Lien vers l´App: [Implementez un modèle de scoring](https://share.streamlit.io
 
 Maquette réalisée sous streamlit
 
-Modélisation basée sur un équlibrage de données et l´algorithme de classification random forest.
+Modélisation basée sur un équlibrage de données et l´algorithme de classification random forest.(API)
