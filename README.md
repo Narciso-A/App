@@ -1,10 +1,11 @@
 # App
-Public repo for Apps 
 
-Projet Openclassrooms: Evaluation  du risque de l´octroi de crédit
+Projet Openclassrooms: Implémentez un modèle de scoring
+
+Evaluation du risque de crédit pour une banque
 
 Lien vers l´App: [Implementez un modèle de scoring](https://share.streamlit.io/narciso-oc/app/main/dashboard_streamlit.py)
 
-Maquette réalisée sous streamlit
-
-Modélisation basée sur un équlibrage de données et l´algorithme de classification random forest.(API)
+Dashboard: La maquette est réalisée sous streamlit,
+API: Le modèle est encapsulé dans une API deployé sous Heroku. 
+La modélisation est basée sur un équilibrage de données et l´algorithme de classification random forest.
