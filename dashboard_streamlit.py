@@ -65,7 +65,7 @@ df = pd.read_json(r.content.decode('utf-8'))
 #df.columns = ['Identifiant client','type','Prediction du Risque']
 
 # IHM
-st.markdown("### Prevision du risque client")
+st.markdown("### Estimation du risque de crédit")
 st.markdown("\n\n\n\n")
 
 id_client = df['post_id'].to_list()[0]
@@ -80,13 +80,13 @@ st.write(
 
 # recommandation
 seuil1 = 45 # seuil de non defaut en pourcentage
-seuil2 = 70
+seuil2 = 80
 if val_nondefaut<seuil1:
-    st.warning("- **Recommandation :** **__dossier refusé__**")
+    st.error("- **Recommandation : dossier refusé**")
 elif (val_nondefaut>=seuil1) & (val_nondefaut<seuil2):
-    st.write("- **Recommandation : ** __**dossier à reexaminer**__")
+    st.warning("- **Recommandation : dossier à réexaminer**")
 else:
-    st.success("- **Recommandation : ** __**dossier validé**__")
+    st.success("**Recommandation : dossier validé**")
 
 
 # Graphique subplot de la liste des variables choisis
