@@ -35,7 +35,7 @@ try:
         "", list(df_mydata.index)
     )
     if not client_id:
-        st.sidebar.error("Veuillez selectionner un client.")
+        st.sidebar.success("Veuillez selectionner un client.")
     else:
         st.sidebar.write("# Client id:  ", client_id)
 
