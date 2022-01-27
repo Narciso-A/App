@@ -31,8 +31,8 @@ try:
     st.sidebar.write("# Choix d´un identifiant client")
 
     ## Risque credit
-    client_id = st.sidebar.selectbox(
-        "", list(df_mydata.index,index=1)
+    client_id = st.sidebar.selectbox( 
+        "", list(df_mydata.index),index=1
     )
     if not client_id:
         st.sidebar.success("Veuillez selectionner un client.")
