@@ -132,5 +132,5 @@ tab = df_mydata.loc[client_id,ListeVar]
 tab = tab.reset_index()
 tab.index = ListeDef
 tab.columns = ['Nom abrégé de l´indicateur','Client Id: '+str(client_id)]
-tab.iloc[:,1] = df.loc[2:3,'cats'].round(2)
+tab.iloc[:,1] = tab.iloc[:,1].round(2)
 st.write(tab)
