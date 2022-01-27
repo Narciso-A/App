@@ -1,3 +1,4 @@
+from pydoc import cli
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -126,9 +127,9 @@ st.write(fig)
 st.write("\n\n\n### Valeurs descriptives du client")
 st.markdown("\n\n\n\n")
 
-# tableau des valeurs
+# tableau des indicateurs du clients
 tab = df_mydata.loc[client_id,ListeVar]
 tab = tab.reset_index()
 tab.index = ListeDef
-
+tab.columns = ['Definition','Indicateur','Client Id: '+str(client_id)]
 st.write(tab)
