@@ -29,16 +29,16 @@ try:
     
     df_mydata = get_my_data()
 
-    st.sidebar.info('Veuillez sélectionner un identifiant client dans le menu déroulant')
+    st.sidebar.info('**Veuillez sélectionner un identifiant \
+    client dans le menu déroulant.**')
+
     st.sidebar.write("# Choix d´un identifiant client")
 
     client_id = st.sidebar.selectbox( 
         "", list(df_mydata.index),index=1
     )
-    if not client_id:
-        st.sidebar.success("Veuillez selectionner un client.")
-    else:
-        st.sidebar.write("# Client id:  ", client_id)
+    
+    st.sidebar.write("# Client id:  ", client_id)
 
 except URLError as e:
     st.error(
