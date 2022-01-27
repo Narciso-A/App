@@ -117,4 +117,18 @@ st.write("\n\n\n### Valeurs descriptives du client")
 st.markdown("\n\n\n\n")
 
 # tableau des valeurs
-st.write(df_mydata.loc[client_id,ListeVar].T)
+tab = df_mydata.loc[client_id,ListeVar]
+
+ListeDef = [
+    'score 3 (calcul externe)',
+    'score 2 (calcul externe)',
+    'score 1 (calcul externe)',
+    'nombre de jours en emploi',
+    'montant du bien',
+    'montant du crédit',
+    'annuité',
+    'ressources du client']
+
+tab['Definition'] = ListeDef
+
+st.write(tab)
