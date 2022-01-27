@@ -16,6 +16,16 @@ ListeVar = [
     'AMT_ANNUITY',
     'AMT_INCOME_TOTAL']
 
+ListeDef = [
+    'score 3 (calcul externe)',
+    'score 2 (calcul externe)',
+    'score 1 (calcul externe)',
+    'nombre de jours en emploi',
+    'montant du bien',
+    'montant du crédit',
+    'annuité',
+    'ressources du client']
+
 fic_donnee = 'donnee/donnee_train_pretraitrement_1000.csv'
 
 @st.cache
@@ -118,17 +128,7 @@ st.markdown("\n\n\n\n")
 
 # tableau des valeurs
 tab = df_mydata.loc[client_id,ListeVar]
-
-ListeDef = [
-    'score 3 (calcul externe)',
-    'score 2 (calcul externe)',
-    'score 1 (calcul externe)',
-    'nombre de jours en emploi',
-    'montant du bien',
-    'montant du crédit',
-    'annuité',
-    'ressources du client']
-
+tab.reset_index()
 tab.index = ListeDef
 
 st.write(tab)
