@@ -128,7 +128,7 @@ st.markdown("\n\n\n\n")
 
 # tableau des valeurs
 tab = df_mydata.loc[client_id,ListeVar]
-tab.reset_index()
+tab.reset_index(inplace=True)
 tab.index = ListeDef
 
 st.write(tab)
