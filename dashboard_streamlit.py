@@ -50,8 +50,8 @@ except URLError as e:
     )
 
 
-if not client_id:
-    client_id = 0
+#if not client_id:
+#    client_id = 0
 
 # url local
 # name_url = 'http://localhost:5000/api/' + str(client_id)
