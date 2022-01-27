@@ -69,14 +69,8 @@ st.markdown("### Estimation du risque de crédit")
 st.markdown("\n\n\n\n")
 
 id_client = df['post_id'].to_list()[0]
-st.write("- **Identifiant client**",id_client)
-
 val_nondefaut = round(100*df['valeurs'].to_list()[0][0],2)
 val_defaut = round(100*df['valeurs'].to_list()[0][1],2)
-
-st.write( 
-    "- **Risque estimé: ** ",
-     val_defaut," %" )
 
 # recommandation
 seuil1 = 45 # seuil de non defaut en pourcentage
@@ -88,6 +82,11 @@ elif (val_nondefaut>=seuil1) & (val_nondefaut<seuil2):
 else:
     st.success("**Recommandation : dossier validé**")
 
+# info client et probabilité
+st.write("- **Identifiant client**",id_client)
+st.write( 
+    "- **Risque estimé: ** ",
+     val_defaut," %" )
 
 # Graphique subplot de la liste des variables choisis
 fig = plt.figure(figsize=(16, 16))
