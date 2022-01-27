@@ -129,6 +129,6 @@ ListeDef = [
     'annuité',
     'ressources du client']
 
-tab['Definition'] = ListeDef
+tab.index = ListeDef
 
 st.write(tab)
