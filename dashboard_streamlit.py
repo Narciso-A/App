@@ -82,7 +82,7 @@ st.write(
 seuil1 = 45 # seuil de non defaut en pourcentage
 seuil2 = 70
 if val_nondefaut<seuil1:
-    st.markdown("- **Recommandation :** __**dossier refusé**__",)
+    st.markdown("- **Recommandation :** __**__dossier refusé__**__",)
 elif (val_nondefaut>=seuil1) & (val_nondefaut<seuil2):
     st.write("- **Recommandation : ** __**dossier à reexaminer**__")
 else:
