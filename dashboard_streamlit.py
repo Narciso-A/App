@@ -28,8 +28,8 @@ def get_my_data():
 try:
     
     df_mydata = get_my_data()
-    
-    st.info('Veuillez sélectionner un identifiant client dans le menu déroulant')
+
+    st.sidebar.info('Veuillez sélectionner un identifiant client dans le menu déroulant')
     st.sidebar.write("# Choix d´un identifiant client")
 
     client_id = st.sidebar.selectbox( 
