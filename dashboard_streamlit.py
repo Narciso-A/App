@@ -82,11 +82,11 @@ st.write(
 seuil1 = 45 # seuil de non defaut en pourcentage
 seuil2 = 70
 if val_nondefaut<seuil1:
-    st.exception("- **Recommandation :** **__dossier refusé__**",color='r')
+    st.warning("- **Recommandation :** **__dossier refusé__**",color='r')
 elif (val_nondefaut>=seuil1) & (val_nondefaut<seuil2):
     st.write("- **Recommandation : ** __**dossier à reexaminer**__")
 else:
-    st.info("- **Recommandation : ** __**dossier validé**__")
+    st.success("- **Recommandation : ** __**dossier validé**__")
 
 
 # Graphique subplot de la liste des variables choisis
