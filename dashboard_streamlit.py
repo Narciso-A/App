@@ -131,5 +131,5 @@ st.markdown("\n\n\n\n")
 tab = df_mydata.loc[client_id,ListeVar]
 tab = tab.reset_index()
 tab.index = ListeDef
-tab.columns = ['Definition','Indicateur','Client Id: '+str(client_id)]
+tab.columns = ['Nom abrégé de l´indicateur','Client Id: '+str(client_id)]
 st.write(tab)
