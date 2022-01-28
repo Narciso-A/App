@@ -8,7 +8,7 @@ from urllib.error import URLError
 
 # entete
 st.title('Home Bank')
-st.aside.image('logo_bank.jpg')
+st.sidebar.image('logo_bank.jpg')
 
 # variables choisies dans les features importances principales
 ListeVar = [ 
