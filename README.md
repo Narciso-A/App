@@ -1,8 +1,8 @@
-# App
+### App
+****
 
-Projet Openclassrooms: Implémentez un modèle de scoring
-
-Evaluation du risque de crédit pour une banque
+**Projet Openclassrooms: Implémentez un modèle de scoring**
+*Evaluation du risque de crédit pour une banque*
 
 Lien vers l´App: [Implementez un modèle de scoring](https://share.streamlit.io/narciso-oc/app/main/dashboard_streamlit.py)
 
