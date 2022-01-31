@@ -77,7 +77,7 @@ except URLError as e:
 name_url = 'https://app-api-projet-p7.herokuapp.com/api/'+ str(client_id)
 
 # requete et construction du dataframe
-r = requests.get(name_url)
+r = requests.get(name_url, timeout=3)
 df = pd.read_json(r.content.decode('utf-8'))
 #df.columns = ['Identifiant client','type','Prediction du Risque']
 
