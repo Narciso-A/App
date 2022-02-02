@@ -51,7 +51,7 @@ try:
 
 
     client_id = st.sidebar.selectbox( 
-        "", list(df_mydata.index),index=1
+        "", list(df_mydata.index),index=50
     )
     
     st.sidebar.write("# Client id:  ", client_id)
