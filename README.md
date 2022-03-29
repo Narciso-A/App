@@ -9,3 +9,4 @@ Lien vers l´App: [Implementez un modèle de scoring](https://share.streamlit.io
 Dashboard: La maquette est réalisée sous streamlit,  
 Le modèle est encapsulé dans une API deployée sous Heroku.  
 La modélisation est basée sur un équilibrage de données et l´algorithme de classification LightGBM.
+
