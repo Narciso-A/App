@@ -95,7 +95,8 @@ else:
 
 # info client et probabilité
 st.write("- **Identifiant client**", id_client)
-st.write("- **Risque estim: **", val_defaut," %" )
+#st.write("- **Risque estimé: ** ", val_defaut," %" )
+st.write("- **Risque estimé: ** ")
 
 # Graphique subplot de la liste des variables choisis
 fig = plt.figure(figsize=(16, 16))
