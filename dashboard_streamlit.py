@@ -94,7 +94,7 @@ else:
     st.success("**Recommandation : dossier validé**")
 
 # info client et probabilité
-st.write("- **Risque estimé: ** ")
+st.write("- **Risque estimé:** ")
 st.write("- **Identifiant client**", id_client)
 #st.write("- **Risque estimé: ** ", val_defaut," %" )
 
