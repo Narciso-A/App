@@ -1,7 +1,7 @@
 ### App
 ****
 
-**Projet Openclassrooms: Implémentez un modèle de scoring**  
+**Implémentez un modèle de scoring**  
 *Evaluation du risque de crédit pour une banque*
 
 Lien vers l´App: [Implementez un modèle de scoring](https://share.streamlit.io/narciso-oc/app/main/dashboard_streamlit.py)
@@ -12,7 +12,7 @@ La modélisation est basée sur un équilibrage de données et l´algorithme de 
 
 ****
 
-**Openclassrooms project: Implement a scoring model** *Credit risk assessment for a bank  
+**Implement a scoring model**  
 *Credit risk assessment for a bank*
 
 Link to the App: [Implement a scoring model](https://share.streamlit.io/narciso-oc/app/main/dashboard_streamlit.py)
